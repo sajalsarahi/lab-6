@@ -1,28 +1,20 @@
-
 :root {
   --bs-bg-body: light-dark(#fbf7f0, #1f1c19);
   --bs-bg-1: light-dark(#ece2d3, #1f1c19);
   --bs-bg-2: light-dark(#ece2d3, #2b2622);
   --bs-heading-font-family: Georgia, "Times New Roman", serif;
-  --bs-primary-base: #2b2622;
+
   --bs-primary-bg: #2b2622;
-  --bs-primary-fg: light-dark(#2b2622, #ece2d3);
-  --bs-primary-fg-emphasis: light-dark(#1a1714, #fbf7f0);
-  --bs-primary-bg-subtle: light-dark(#ece2d3, #2b2622);
-  --bs-primary-border: light-dark(#c9b9a3, #3d3631);
-  --bs-primary-focus-ring: color-mix(in oklch, #2b2622 40%, transparent);
+  --bs-primary-fg: #2b2622;
+  --bs-primary-fg-emphasis: #1a1714;
+  --bs-primary-border: #2b2622;
+  --bs-primary-focus-ring: #2b2622;
   --bs-primary-contrast: #fbf7f0;
 }
 
 
 .btn-solid.theme-primary {
-  --bs-btn-bg: #2b2622;
-  --bs-btn-border-color: #2b2622;
-  --bs-btn-color: #fbf7f0;
-  --bs-btn-hover-bg: #3d3631;
-  --bs-btn-hover-border-color: #3d3631;
-  --bs-btn-hover-color: #fbf7f0;
-  --bs-btn-active-bg: #1a1714;
-  --bs-btn-active-border-color: #1a1714;
-  --bs-btn-active-color: #fbf7f0;
+  --bs-theme-bg: #2b2622;
+  --bs-theme-border: #2b2622;
+  --bs-theme-contrast: #fbf7f0;
 }

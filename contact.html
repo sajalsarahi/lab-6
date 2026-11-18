@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Kos &amp; Crumbs</title>
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="d-flex flex-column min-vh-100 bg-1" data-bs-theme="light">
+
+  <!-- Navbar with drawer menu on small screens -->
+  <nav class="navbar md:navbar-expand bg-1" data-bs-theme="dark" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Kos &amp; Crumbs</a>
+      <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#siteDrawer" aria-controls="siteDrawer" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <dialog class="drawer drawer-end" tabindex="-1" id="siteDrawer" aria-labelledby="siteDrawerLabel">
+        <div class="drawer-header">
+          <p class="drawer-title h5 mb-0" id="siteDrawerLabel">Menu</p>
+          <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+        <div class="drawer-body">
+          <ul class="nav navbar-nav md:ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </dialog>
+    </div>
+  </nav>
+
+  <main class="container py-4 flex-grow-1">
+    <h1 class="mb-4">Contact Us</h1>
+
+    <form>
+      <div class="row g-3">
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="firstName" class="form-label">First name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" autocomplete="given-name" required>
+          </div>
+        </div>
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="lastName" class="form-label">Last name</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" autocomplete="family-name" required>
+          </div>
+        </div>
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="topic" class="form-label">What is this about?</label>
+            <select class="form-control" id="topic" name="topic" required>
+              <option value="" selected>Choose one…</option>
+              <option value="pickup">A pickup order</option>
+              <option value="catering">Catering for an event</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Something else</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-field">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-field">
+            <input type="checkbox" class="check" id="consent" name="consent" required>
+            <label for="consent">I agree that Kos &amp; Crumbs can email me about my request.</label>
+          </div>
+        </div>
+        <div class="col-12">
+          <button type="submit" class="btn-solid theme-primary">Send message</button>
+        </div>
+      </div>
+    </form>
+  </main>
+
+  <footer class="bg-1 fg-body py-4 mt-5" data-bs-theme="dark">
+    <div class="container">
+      <p class="mb-1">Kos &amp; Crumbs &middot; Toronto</p>
+      <p class="mb-0 small fg-2">&copy; 2026 Saja Alsarahin</p>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js" type="module"></script>
+</body>
+</html>
